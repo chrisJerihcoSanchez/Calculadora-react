@@ -1,8 +1,80 @@
-.calculator{
-    background-color: #22252d;
-    height: 90vh;
-    width: 45vh;
-    border-radius: 30px;
-    /*isplay: flex;
-    flex-wrap: wrap;*/
+.Container {
+  background-color: #e7e7e8;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.board {
+  width: 45vh;
+  height: 56vh;
+  background-color: #292d36;
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.buttons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.dark {
+  background-color: #292d36;
+}
+.calculator {
+  width: 300px;
+  background-color: #292d36;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.buttonGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 15px;
+}
+
+.calculator {
+  width: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.calculatorDark {
+  background-color: #292d36;
+}
+
+.calculatorLight {
+  background-color: #f9f9f9;
 }
